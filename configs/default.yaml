@@ -1,0 +1,16 @@
+﻿dataset:
+  root: data/processed
+  count: 24
+  seed: 42
+model:
+  output_dir: models
+  epochs: 1
+  imgsz: 320
+  device: auto
+scale:
+  reference_mm: 100.0
+  reference_pixels: null
+compliance:
+  code: ACI224R
+  exposure: humidity
+  mabhas9_limit_mm: 0.30

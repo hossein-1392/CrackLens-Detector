@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cracklens"
+version = "0.1.0"
+description = "Offline-capable RC concrete crack inspection and serviceability screening"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pillow>=10.0",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+vision = [
+  "opencv-python-headless>=4.8",
+  "scikit-image>=0.21",
+]
+demo = ["gradio>=4.0"]
+training = ["torch>=2.1", "ultralytics>=8.2"]
+dev = ["pytest>=8.0", "nbformat>=5.9", "nbclient>=0.9"]
+
+[project.scripts]
+cracklens = "cracklens.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

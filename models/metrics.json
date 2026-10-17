@@ -1,0 +1,36 @@
+{
+  "model": {
+    "kind": "classical_threshold",
+    "threshold": 40,
+    "min_component_area": 3,
+    "dataset_root": "data\\processed",
+    "training_mode": "offline_classical_baseline"
+  },
+  "train": {
+    "iou": 0.9973269128321973,
+    "precision": 0.9973269128321973,
+    "recall": 1.0,
+    "f1": 0.9986434902868865,
+    "images": 17,
+    "mask_mAP50_95": null,
+    "mask_mAP_note": "not available for the classical threshold baseline"
+  },
+  "val": {
+    "iou": 0.9974765465378731,
+    "precision": 0.9974765465378731,
+    "recall": 1.0,
+    "f1": 0.9987356308879737,
+    "images": 3,
+    "mask_mAP50_95": null,
+    "mask_mAP_note": "not available for the classical threshold baseline"
+  },
+  "test": {
+    "iou": 0.9954663212435233,
+    "precision": 0.9954663212435233,
+    "recall": 1.0,
+    "f1": 0.9977124183006536,
+    "images": 4,
+    "mask_mAP50_95": null,
+    "mask_mAP_note": "not available for the classical threshold baseline"
+  }
+}

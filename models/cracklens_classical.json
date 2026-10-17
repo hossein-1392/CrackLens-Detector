@@ -1,0 +1,7 @@
+{
+  "kind": "classical_threshold",
+  "threshold": 40,
+  "min_component_area": 3,
+  "dataset_root": "data\\processed",
+  "training_mode": "offline_classical_baseline"
+}
